@@ -1,0 +1,8 @@
+---
+- name: add vnet
+  shell: >
+   az network vnet create \
+    --name "{{vnetname}}" \
+    --address-prefixes "{{cidr}}" \
+    --resource-group "{{rgname}}" \
+# tasks file for azr-vnet-add
