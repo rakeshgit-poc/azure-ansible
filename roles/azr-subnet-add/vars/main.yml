@@ -1,0 +1,9 @@
+---
+# vars file for azr-subnet-add
+
+rgname: azr-ces-poc
+vnetname: rkvnet
+subnetname: sb1
+addressprefix: "10.200.4.0/26"
+nsgname: ""
+rtname: ""

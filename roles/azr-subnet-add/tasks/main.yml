@@ -1,0 +1,12 @@
+---
+# tasks file for azr-subnet-add
+
+- name: Create a subnet
+  shell: >
+    az network vnet subnet create \
+     --resource-group "{{rgname}}" \
+     --vnet-name "{{vnetname}}" \
+     --name "{{subnetname}}" \
+     --address-prefixes "{{addressprefix}}" \
+     --network-security-group "{{nsgname}}" \
+     --route-table "{{rtname}}" \
