@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   gather_facts: true
-  became: yes
+  become: yes
   roles:
-    - #azr-vnet-add
+   #- azr-vnet-add
     - azr-subnet-add
