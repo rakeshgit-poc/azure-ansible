@@ -6,3 +6,4 @@
   roles:
     - azr-vnet-add
     #- azr-subnet-add
+   # - azr-vnet-delete
