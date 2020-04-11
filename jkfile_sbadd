@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('git clone') {
          steps {
-            git url: 'https://github.com/rakeshgit-poc/azure-ansible.git'
+            git branch: 'trial1', url: 'https://github.com/rakeshgit-poc/azure-ansible.git'
          }
       }
       stage ('playbook build'){
