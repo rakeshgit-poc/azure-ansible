@@ -1,0 +1,17 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('git clone') {
+         steps {
+            git url: 'https://github.com/rakeshgit-poc/azure-ansible.git'
+         }
+      }
+      stage ('playbook build'){
+          steps {
+              ansiblePlaybook '/var/lib/jenkins/workspace/azure-sb/rollcall.yml'
+          }
+      }
+     
+   }
+}
