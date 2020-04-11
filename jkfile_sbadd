@@ -9,7 +9,7 @@ pipeline {
       }
       stage ('playbook build'){
           steps {
-              ansiblePlaybook '/var/lib/jenkins/workspace/azure-sb/rollcall.yml'
+              ansiblePlaybook '/var/lib/jenkins/workspace/azure-sb/rolecall.yml'
           }
       }
      
