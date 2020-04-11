@@ -4,6 +4,6 @@
   gather_facts: true
   become: yes
   roles:
-    - azr-vnet-add
-    #- azr-subnet-add
+    #- azr-vnet-add
+    - azr-subnet-add
    # - azr-vnet-delete
